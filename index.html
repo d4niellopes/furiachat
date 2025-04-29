@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURIA Chat - Acompanhe o time de CS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsJussmZJ0qm7cFAGtD29cIUTBRYqIVWQ18Q&s" alt="Logo FURIA" class="logo">
+            <h1>FURIA CS</h1>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </header>
+
+        <nav class="sidebar">
+            <ul>
+                <li class="active" data-tab="chat"><i class="fas fa-comments"></i> Chat</li>
+                <li data-tab="crowd"><i class="fas fa-users"></i> Torcida</li>
+                <li data-tab="players"><i class="fas fa-users"></i> Jogadores</li>
+                <li data-tab="news"><i class="fas fa-newspaper"></i> Notícias</li>
+                <li data-tab="history"><i class="fas fa-history"></i> História</li>
+                <li data-tab="matches"><i class="fas fa-calendar-alt"></i> Próximos Jogos</li>
+                <li data-tab="facts"><i class="fas fa-lightbulb"></i> Curiosidades</li>
+                <li data-tab="live"><i class="fas fa-tv"></i> Ao Vivo</li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- chat principal -->
+            <div class="tab-content active" id="chat">
+                <div class="chat-container">
+                    <div class="messages" id="messages">
+                        <!-- As mensagens vem pra cá pelo script.js -->
+                    </div>
+                    <div class="input-area">
+                        <input type="text" id="message-input" placeholder="Digite sua mensagem ou comando (/ajuda)">
+                        <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- simulador de torcida -->
+            <div class="tab-content" id="crowd">
+                <h2>Simulador de Torcida</h2>
+                <div class="crowd-simulator">
+                    <button id="cheer-btn">Gritar <strong style="color: #FF5C00;"> "FURIA!"</strong></button>
+                    <button id="chant-btn">Cantar "Vamos FURIA!"</button>
+                    <button id="celebrate-btn">Celebrar Clutch</button>
+                    <div class="crowd-messages" id="crowd-messages"></div>
+                </div>
+            </div>
+
+            <!-- jogadores -->
+            <div class="tab-content" id="players">
+                <h2>Elenco Atual</h2>
+                <div class="players-grid" id="players-grid">
+                    <!-- jogadores virão aqui -->
+                </div>
+            </div>
+            
+            <!-- notícias -->
+            <div class="tab-content" id="news">
+                <h2>Últimas Notícias</h2>
+                <div class="news-grid" id="news-grid">
+                    <!-- notícias aq -->
+                </div>
+            </div>
+
+            <!-- história do time -->
+            <div class="tab-content" id="history">
+                <h2>História da FURIA</h2>
+                <div class="timeline" id="timeline">
+                    <!-- eventos marcantes aqui -->
+                </div>
+            </div>
+
+            <!-- próximos jogos -->
+            <div class="tab-content" id="matches">
+                <h2>Próximos Jogos</h2>
+                <div class="matches-list" id="matches-list">
+                    <!-- os próximos jogos viriam aqui mas só tem a major marcada e sem data ainda -->
+                </div>
+            </div>
+
+            <!-- curiosidades -->
+            <div class="tab-content" id="facts">
+                <h2>Curiosidades</h2>
+                <div class="facts-container">
+                    <div class="fact-card" id="fact-display">
+                        <p>Clique no botão para ver uma curiosidade furiosa!</p>
+                    </div>
+                    <button id="new-fact-btn">Nova Curiosidade</button>
+                </div>
+            </div>
+            <!-- jogo ao vivo -->
+            <div class="tab-content" id="live">
+                <h2>Jogo Ao Vivo</h2>
+                
+                <div class="live-match-container" id="live-match-container">
+                </div>
+            
+                <div class="live-actions">
+                    <button id="cheer-live-btn" class="btn pulse">
+                        <i class="fas fa-bullhorn"></i> Torcer!
+                    </button>
+                    <button id="celebrate-live-btn" class="btn">
+                        <i class="fas fa-trophy"></i> Celebrar!
+                    </button>
+                </div>
+            
+                <div class="live-chat" id="live-chat">
+                    <!--chat do jogo -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
