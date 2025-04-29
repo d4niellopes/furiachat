@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     showMatches();
                     break;
                 case 'historia':
-                case 'histórico':
+                case 'história':
                     showHistory();
                     break;
                 case 'curiosidade':
