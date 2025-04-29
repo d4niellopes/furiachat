@@ -572,7 +572,7 @@
     color: var(--text);
   }
   
-  /* Linha do Tempo */
+  /* Linha do Tempo (sem imagens, a parte de imagens está no final) */
   .timeline {
     position: relative;
     max-width: 900px;
@@ -1081,4 +1081,43 @@
   0% { opacity: 1; }
   50% { opacity: 0.6; }
   100% { opacity: 1; }
+}
+
+/* Todo o conteúdo de imagens da história aqui */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.timeline-image-container {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid var(--glass-border);
+}
+
+.timeline-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.timeline-image:hover {
+  transform: scale(1.05);
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+  .timeline-image-container {
+      height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline-image-container {
+      height: 120px;
+  }
 }

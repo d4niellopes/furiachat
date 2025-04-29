@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Elementos do DOM
+    //DOM
     const messageInput = document.getElementById('message-input');
     const sendButton = document.getElementById('send-button');
     const messagesContainer = document.getElementById('messages');
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             role: "Coach",
             age: 28,
             nationality: "Brasileiro",
-            since: "2024",
+            since: "2023",
             image: "https://img-cdn.hltv.org/gallerypicture/BV6tzSGvJKWTIpKR2H9XLi.jpg?ixlib=java-2.1.0&w=1200&s=89a846d3205b447c6efe74d0414b1171",
             bio: "Head Coach do time, responsável pela organização e estratégias na equipe."
         }
@@ -71,37 +71,44 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             year: "2017",
             event: "Fundação da FURIA Esports",
-            description: "A organização FURIA é fundada, inicialmente com times em diversos jogos."
+            description: "A organização FURIA é fundada, inicialmente com times em diversos jogos.",
+            image: "https://assets.gamearena.gg/wp-content/uploads/2021/10/30015455/CSGO-A-historia-da-FURIA-o-time-de-mais-destaque-no-CSGO-brasileiro.png"
         },
         {
             year: "2018",
             event: "Formação do time de CS:GO",
-            description: "FURIA monta seu primeiro time de CS:GO com jogadores brasileiros promissores."
+            description: "FURIA monta seu primeiro time de CS:GO com jogadores brasileiros promissores.",
+            image: "https://www.esportelandia.com.br/app/uploads/2020/10/Historia-da-FURIA-Esports.jpg"
         },
         {
             year: "2019",
             event: "Primeiro título internacional",
-            description: "Vitória no ECS Season 7 Finals, derrotando Team Liquid na final."
+            description: "Vitória no ECS Season 7 Finals, derrotando Team Liquid na final.",
+            image: "https://s2-techtudo.glbimg.com/gT5kDcWMPCp2Jm7yhyx2EhRd6ZM=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2019/E/2/Py05CJR1WpSqfWZ9oW8g/furianorth1.jpg"
         },
         {
             year: "2020",
             event: "Consolidação no cenário internacional",
-            description: "Chegam ao top 5 do ranking mundial com estilo de jogo agressivo."
+            description: "Chegam ao top 3 do ranking mundial com estilo de jogo agressivo.",
+            image: "https://s2-ge.glbimg.com/iWE9FzIa-cvydkUMnSB5wo30XoM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/G/5/RdF1pJQr2LZEoEgvWVtA/furia-top3.jpg"
         },
         {
             year: "2021",
             event: "Mudanças no elenco",
-            description: "VINI é substituído por drop, trazendo nova dinâmica ao time."
+            description: "VINI é substituído por drop, trazendo nova dinâmica ao time.",
+            image: "https://arena.rtp.pt/wp-content/uploads/2023/06/Drop_@_PGL_Antwerp_2022_Americas_RMR.jpeg"
         },
         {
             year: "2022",
             event: "Chegada ao Major",
-            description: "Primeira participação em Major de CS:GO, chegando às semifinais."
+            description: "Primeira participação em Major de CS:GO, chegando às semifinais.",
+            image: "https://s2-ge.glbimg.com/bmcvWNuUEMY-7KvfgKibtnu2TGs=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/I/V/c6pHeoRRABLSCfpwEDpA/furia-perde-heroic-iem-major-rio-2022.jpg"
         },
         {
             year: "2023",
             event: "Era FalleN",
-            description: "Contratação da lenda FalleN e chelo, reformulando completamente o time."
+            description: "Contratação da lenda FalleN e chelo, reformulando completamente o time.",
+            image: "https://img-cdn.hltv.org/gallerypicture/6K31cnSQ-6ifEBK45dmXkx.jpg?ixlib=java-2.1.0&w=1200&s=a0c872fbb5f6076b38f8034aef537a43"
         }
     ];
 
@@ -142,9 +149,9 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "https://i.ytimg.com/vi/Z2o47kVJjBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLARuZAYLjM4WSC7NkGbWQH4hg3MMg"
         },
         {
-            title: "fer diz que FalleN é 'muito bom de rifle' e opina sobre YEKINDAR: 'É ruim demais'",
-            description: "'O FalleN vai entender o jogo muito mais rápido do que os caras porque agora tá de rifle, vai começar a agir e a galera não vai conseguir entender esse ritmo, isso que vai ser o ruim. Até ele passar isso aí em inglês, já fu###. A galera não sabe, mas o FallleN é muito bom de rifle, só que ele vai criar uns espaços que o big picture da galera, de entendimento, não vai acompanhar. O YEKINDAR, para mim, é ruim demais. Em época de páscoa tá longe de ser bombom, no CS2 não se encontrou até hoje. Sou melhor que o YEKINDAR até três anos sem jogar.'",
-            date: "25/04/2025",
+            title: "fer revela que recebeu convite da FURIA: 'Ficou quase certo que iria entrar'",
+            description: "'O FalleN me ligou, explicou o que estava rolando lá, me cogitou em colocar no time, os caras se interessaram e me ligou para saber se eu estava interessado. Eu falei que pelo que estava para rolar, me interessava. Aí ficou nisso por umas duas semanas, sabia que iria entrar molodoy de AWP.'",
+            date: "28/04/2025",
             image: "https://assets.gamearena.gg/wp-content/uploads/2023/01/30012844/kEB2PD-mPuubj3SQt0TYN8-1024x683.jpg"
         }
     ];
@@ -190,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             addMessageWithButton("🔍 Curiosidades (digite '/curiosidade')", "curiosidade");
                             setTimeout(() => {
                                 addMessage("👉 Ou clique nos menus ao lado para navegar! 🐾", false);
-                        }, 200); // Intervalos mais curtos
+                        }, 200);
                     }, 200);
                 }, 200);
             }, 200);
@@ -213,14 +220,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const tabId = this.getAttribute('data-tab');
             changeTab(tabId);
             
-            // Fechar menu em mobile
+            // Fechar menu se tiver no celular
             if (window.innerWidth <= 768) {
                 sidebar.classList.remove('active');
             }
         });
     });
 
-    // Funções
+    // FUNÇÕES
     
        // função teste para a partida ao vivo
     function initLiveMatch() {
@@ -260,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
         // função para simular atualizações reais de uma partida ao vivo
     function simulateLiveUpdates() {
-            // Atualiza placar aleatoriamente
+            // Atualiza placar de forma randomica
             setInterval(() => {
                 if(Math.random() > 0.7) {
                     liveMatch.score1++;
@@ -274,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 liveMatch.round++;
                 document.querySelector('.live-match-container h3').textContent = `${liveMatch.map} • Round ${liveMatch.round}`;
-            }, 10000); // Atualiza a cada 10 segundos
+            }, 10000); // Atualiza de 10 em 10 segundos
         }
 
         // Adiciona novo evento ao chat
@@ -319,11 +326,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function changeTab(tabId) {
-        // Atualiza menu ativo
+        //atualiza menu ativo
         tabLinks.forEach(link => link.classList.remove('active'));
         document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
         
-        // Mostra conteúdo correto
+
         tabContents.forEach(content => content.classList.remove('active'));
         document.getElementById(tabId).classList.add('active');
     }
@@ -331,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function addMessage(text, isUser = true) {
         const messageDiv = document.createElement('div');
         messageDiv.className = isUser ? 'message user' : 'message bot';
-        messageDiv.innerHTML = text; // Mudamos de textContent para innerHTML
+        messageDiv.innerHTML = text;
         messagesContainer.appendChild(messageDiv);
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
@@ -346,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
         contentDiv.style.width = '100%';
         
         const textSpan = document.createElement('span');
-        textSpan.innerHTML = text; // Usamos innerHTML para permitir emojis
+        textSpan.innerHTML = text; // obs.: innerHTML para permitir emojis
         contentDiv.appendChild(textSpan);
         
         const button = document.createElement('button');
@@ -408,7 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     addMessage("Comando não reconhecido. Digite /ajuda para ver os comandos disponíveis.", false);
             }
         } else {
-            // Resposta genérica
+            // Resposta genérica para comandos nao especificados
             setTimeout(() => {
                 const randomResponses = [
                     "Vamos FURIA! #DIADEFURIA",
@@ -552,6 +559,9 @@ document.addEventListener('DOMContentLoaded', function() {
             timelineItem.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
             timelineItem.innerHTML = `
                 <div class="timeline-content">
+                    <div class="timeline-image-container">
+                        <img src="${item.image}" alt="${item.event}" class="timeline-image">
+                    </div>
                     <h3>${item.year} - ${item.event}</h3>
                     <p>${item.description}</p>
                 </div>
